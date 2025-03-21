@@ -1,0 +1,8 @@
+services:
+  entix-api:
+    image: ghcr.io/chen7david/entix-api:latest
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:3000"
+    restart: unless-stopped
